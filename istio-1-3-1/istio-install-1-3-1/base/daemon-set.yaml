@@ -71,7 +71,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: gcr.io/istio-release/node-agent-k8s:release-1.3-latest-daily
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:node-agent-k8s-release-1.3-latest-daily
         imagePullPolicy: IfNotPresent
         name: nodeagent
         volumeMounts:
