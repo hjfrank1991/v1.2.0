@@ -14,8 +14,8 @@ commonLabels:
 namePrefix: admission-webhook-
 images:
 - name: gcr.io/kubeflow-images-public/admission-webhook
-  newName: gcr.io/kubeflow-images-public/admission-webhook
-  newTag: vmaster-ge5452b6f
+  newName: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new
+  newTag: vmaster-ge5452b6f-vmaster-ge5452b6f
 namespace: kubeflow
 configMapGenerator:
 - envs:
