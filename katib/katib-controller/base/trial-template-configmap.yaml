@@ -52,7 +52,7 @@ data:
             spec:
               containers:
                 - name: pytorch
-                  image: gcr.io/kubeflow-ci/pytorch-dist-mnist-test:v1.0
+                  image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:pytorch-dist-mnist-test-v1.0
                   imagePullPolicy: Always
                   command:
                     - "python"
@@ -66,7 +66,7 @@ data:
             spec:
               containers:
                 - name: pytorch
-                  image: gcr.io/kubeflow-ci/pytorch-dist-mnist-test:v1.0
+                  image: gregistry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:pytorch-dist-mnist-test-v1.0
                   imagePullPolicy: Always
                   command:
                     - "python"
