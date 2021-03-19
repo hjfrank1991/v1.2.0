@@ -17,7 +17,7 @@ spec:
         sidecar.istio.io/inject: "false"
     spec:
       containers:
-      - image: gcr.io/kubeflow-images-public/centraldashboard
+      - image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:centraldashboard-vmaster-g8097cfeb
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:

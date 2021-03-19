@@ -1,9 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: gcr.io/kubeflow-images-public/centraldashboard
-  newName: gcr.io/kubeflow-images-public/centraldashboard
-  newTag: vmaster-g8097cfeb
+- name: kubeflow-images-public/centraldashboard
+  newName: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new
+  newTag: centraldashboard-vmaster-g8097cfeb
 resources:
 - ../base/clusterrole-binding.yaml
 - ../base/clusterrole.yaml

@@ -9,9 +9,9 @@ resources:
 commonLabels:
   kustomize.component: spartakus
 images:
-- name: gcr.io/google_containers/spartakus-amd64
-  newName: gcr.io/google_containers/spartakus-amd64
-  newTag: v1.1.0
+- name: google_containers/spartakus-amd64
+  newName: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new
+  newTag: spartakus-amd64-1.0.2
 configMapGenerator:
 - name: spartakus-config
   envs:
