@@ -27,7 +27,7 @@ data:
     }
   logger: |-
     {
-        "image" : "gcr.io/kfserving/logger:v0.3.0",
+        "image" : "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:logger-v0.3.0",
         "memoryRequest": "100Mi",
         "memoryLimit": "1Gi",
         "cpuRequest": "100m",
@@ -58,26 +58,26 @@ data:
             ]
         },
         "sklearn": {
-            "image": "gcr.io/kfserving/sklearnserver",
-            "defaultImageVersion": "v0.3.0",
+            "image": "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new",
+            "defaultImageVersion": "sklearnserver-v0.3.0",
             "allowedImageVersions": [
-               "v0.3.0"
+               "sklearnserver-v0.3.0"
             ]
         },
         "xgboost": {
-            "image": "gcr.io/kfserving/xgbserver",
-            "defaultImageVersion": "v0.3.0",
+            "image": "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new",
+            "defaultImageVersion": "xgbserver-v0.3.0",
             "allowedImageVersions": [
-               "v0.3.0"
+               "xgbserver-v0.3.0"
             ]
         },
         "pytorch": {
-            "image": "gcr.io/kfserving/pytorchserver",
-            "defaultImageVersion": "v0.3.0",
-            "defaultGpuImageVersion": "v0.3.0-gpu",
+            "image": "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new",
+            "defaultImageVersion": "pytorchserver-v0.3.0",
+            "defaultGpuImageVersion": "pytorchserver-v0.3.0-gpu",
             "allowedImageVersions": [
-               "v0.3.0",
-               "v0.3.0-gpu"
+               "pytorchserver-v0.3.0",
+               "pytorchserver-v0.3.0-gpu"
             ]
         },
         "tensorrt": {
@@ -90,7 +90,7 @@ data:
     }
   storageInitializer: |-
     {
-        "image" : "gcr.io/kfserving/storage-initializer:v0.3.0",
+        "image" : "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:storage-initializer-v0.3.0",
         "memoryRequest": "100Mi",
         "memoryLimit": "1Gi",
         "cpuRequest": "100m",

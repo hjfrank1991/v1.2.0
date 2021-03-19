@@ -16,9 +16,9 @@ patchesStrategicMerge:
 - configmap-patch.yaml
 - statefulset-patch.yaml
 images:
-- name: gcr.io/kubebuilder/kube-rbac-proxy
-  newName: gcr.io/kubebuilder/kube-rbac-proxy
-  newTag: v0.4.0
-- name: gcr.io/kfserving/kfserving-controller
-  newName: gcr.io/kfserving/kfserving-controller
-  newTag: v0.4.1
+- name: kubebuilder/kube-rbac-proxy
+  newName: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new
+  newTag: kube-rbac-proxy-1.0.2
+- name: kfserving/kfserving-controller
+  newName: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new
+  newTag: kfserving-controller-v0.4.1

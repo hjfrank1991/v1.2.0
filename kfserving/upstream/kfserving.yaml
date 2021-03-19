@@ -4267,8 +4267,8 @@ data:
   explainers: |-
     {
         "alibi": {
-            "image" : "gcr.io/kfserving/alibi-explainer",
-            "defaultImageVersion": "v0.4.1"
+            "image" : "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new",
+            "defaultImageVersion": "alibi-explainer-v0.4.1"
         }
     }
   ingress: |-
@@ -4278,7 +4278,7 @@ data:
     }
   logger: |-
     {
-        "image" : "gcr.io/kfserving/logger:v0.4.1",
+        "image" : "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:logger-v0.4.1",
         "memoryRequest": "100Mi",
         "memoryLimit": "1Gi",
         "cpuRequest": "100m",
@@ -4297,17 +4297,17 @@ data:
             "defaultImageVersion": "v1.0.0"
         },
         "sklearn": {
-            "image": "gcr.io/kfserving/sklearnserver",
-            "defaultImageVersion": "v0.4.1"
+            "image": "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new",
+            "defaultImageVersion": "sklearnserver-v0.4.1"
         },
         "xgboost": {
-            "image": "gcr.io/kfserving/xgbserver",
-            "defaultImageVersion": "v0.4.1"
+            "image": "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new",
+            "defaultImageVersion": "xgbserver-v0.4.1"
         },
         "pytorch": {
-            "image": "gcr.io/kfserving/pytorchserver",
-            "defaultImageVersion": "v0.4.1",
-            "defaultGpuImageVersion": "v0.4.1-gpu"
+            "image": "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new",
+            "defaultImageVersion": "pytorchserver-v0.4.1",
+            "defaultGpuImageVersion": "pytorchserver-v0.4.1-gpu"
         },
         "triton": {
             "image": "nvcr.io/nvidia/tritonserver",
@@ -4316,7 +4316,7 @@ data:
     }
   storageInitializer: |-
     {
-        "image" : "gcr.io/kfserving/storage-initializer:v0.4.1",
+        "image" : "registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:storage-initializer-v0.4.1",
         "memoryRequest": "100Mi",
         "memoryLimit": "1Gi",
         "cpuRequest": "100m",
@@ -4410,7 +4410,7 @@ spec:
         - --upstream=http://127.0.0.1:8080/
         - --logtostderr=true
         - --v=10
-        image: gcr.io/kubebuilder/kube-rbac-proxy:v0.4.0
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:kube-rbac-proxy-1.0.2
         name: kube-rbac-proxy
         ports:
         - containerPort: 8443
@@ -4426,7 +4426,7 @@ spec:
               fieldPath: metadata.namespace
         - name: SECRET_NAME
           value: kfserving-webhook-server-cert
-        image: gcr.io/kfserving/kfserving-controller:v0.4.1
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:kfserving-controller-v0.4.1
         imagePullPolicy: Always
         name: manager
         ports:
