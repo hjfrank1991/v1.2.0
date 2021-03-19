@@ -18,7 +18,7 @@ spec:
       - name: manager
         command:
         - /root/manager
-        image: gcr.io/kubeflow-images-public/kubernetes-sigs/application
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:application-1.0-beta
         imagePullPolicy: Always
         env:
         # TODO(https://github.com/kubeflow/manifests/issues/1043)
