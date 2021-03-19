@@ -12,7 +12,7 @@ spec:
         sidecar.istio.io/inject: "false"
     spec:
       containers:
-      - image: gcr.io/cloud-solutions-group/cloud-endpoints-controller:0.2.1
+      - image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:cloud-endpoints-controller-0.2.1
         imagePullPolicy: Always
         name: cloud-endpoints-controller
         readinessProbe:

@@ -73,7 +73,7 @@ spec:
       containers:
         - command:
           - /pub-key-server
-          image: gcr.io/kubeflow-images-public/jwtpubkey:v20200311-v0.7.0-rc.5-109-g641fb40b-dirty-eb1cdc
+          image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:jwtpubkey-v20200311-v0.7.0
           name: pubkey
           volumeMounts:
             - mountPath: /var/pubkey/

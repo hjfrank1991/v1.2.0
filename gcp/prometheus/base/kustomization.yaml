@@ -9,9 +9,9 @@ configMapGenerator:
   envs:
   - params.env
 images:
-- name: gcr.io/stackdriver-prometheus/stackdriver-prometheus
-  newName: gcr.io/stackdriver-prometheus/stackdriver-prometheus
-  newTag: release-0.4.2
+- name: stackdriver-prometheus/stackdriver-prometheus
+  newName: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new
+  newTag: stackdriver-prometheus-release-0.4.2
 vars:
 - name: projectId
   objref:

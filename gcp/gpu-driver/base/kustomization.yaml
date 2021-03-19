@@ -5,9 +5,9 @@ resources:
 commonLabels:
   kustomize.component: gpu-driver
 images:
-- name: gcr.io/google-containers/pause
-  newName: gcr.io/google-containers/pause
-  newTag: '2.0'
+- name: google-containers/pause
+  newName: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new
+  newTag: 'pause-2.0'
 - name: cos-nvidia-installer
   newName: cos-nvidia-installer
   newTag: fixed

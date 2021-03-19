@@ -613,7 +613,7 @@ spec:
         env:
         - name: CONFIG_CONNECTOR_VERSION
           value: 1.27.2
-        image: gcr.io/cnrm-eap/recorder:1c8c589
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:recorder-1c8c589
         imagePullPolicy: Always
         name: recorder
         readinessProbe:
@@ -671,7 +671,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: gcr.io/cnrm-eap/webhook:1c8c589
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:webhook-1c8c589
         imagePullPolicy: Always
         name: webhook
         readinessProbe:
@@ -722,7 +722,7 @@ spec:
         - --prometheus-scrape-endpoint=:8888
         command:
         - /configconnector/manager
-        image: gcr.io/cnrm-eap/controller:1c8c589
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:controller-1c8c589
         imagePullPolicy: Always
         name: manager
         readinessProbe:
@@ -775,7 +775,7 @@ spec:
         - --stderrthreshold=INFO
         command:
         - /configconnector/deletiondefender
-        image: gcr.io/cnrm-eap/deletiondefender:1c8c589
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:deletiondefender-1c8c589
         imagePullPolicy: Always
         name: deletiondefender
         readinessProbe:
