@@ -27,9 +27,9 @@ commonLabels:
   kustomize.component: jupyter-web-app
 namespace: kubeflow
 images:
-- name: gcr.io/kubeflow-images-public/jupyter-web-app
-  newName: gcr.io/kubeflow-images-public/jupyter-web-app
-  newTag: vmaster-ge4456300
+- name: kubeflow-images-public/jupyter-web-app
+  newName: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new
+  newTag: jupyter-web-app-vmaster-ge4456300
 resources:
 - ../base/cluster-role-binding.yaml
 - ../base/cluster-role.yaml
