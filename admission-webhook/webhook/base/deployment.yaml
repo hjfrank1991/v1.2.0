@@ -9,7 +9,7 @@ spec:
         sidecar.istio.io/inject: "false"
     spec:
       containers:
-      - image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:vmaster-ge5452b6f-vmaster-ge5452b6f
+      - image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:admission-webhook-vmaster-ge5452b6f
         name: admission-webhook
         volumeMounts:
         - mountPath: /etc/webhook/certs
