@@ -13,7 +13,7 @@ spec:
       - name: context
         type: string
   steps:
-    - image: gcr.io/kaniko-project/executor:v0.11.0
+    - image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:executor-v0.11.0
       command:
       - /kaniko/executor
       - --dockerfile=Dockerfile
