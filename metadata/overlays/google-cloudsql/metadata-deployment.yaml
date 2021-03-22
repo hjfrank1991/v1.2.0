@@ -23,7 +23,7 @@ spec:
         envFrom:
           - configMapRef:
               name: metadata-db-parameters
-        image: gcr.io/cloudsql-docker/gce-proxy:1.16
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:gce-proxy-1.16
         command: ["/cloud_sql_proxy",
                   "-instances=$(MYSQL_INSTANCE)=tcp:3306",
                   # If running on a VPC, the Cloud SQL proxy can connect via Private IP. See:
@@ -91,7 +91,7 @@ spec:
           envFrom:
           - configMapRef:
               name: metadata-db-parameters
-          image: gcr.io/cloudsql-docker/gce-proxy:1.16
+          image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:gce-proxy-1.16
           command: ["/cloud_sql_proxy",
                     "-instances=$(MYSQL_INSTANCE)=tcp:3306",
                     # If running on a VPC, the Cloud SQL proxy can connect via Private IP. See:

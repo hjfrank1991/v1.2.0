@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: container
-        image: gcr.io/ml-pipeline/envoy:metadata-grpc
+        image: registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:envoy-metadata-grpc
         ports:
         - name: md-envoy
           containerPort: 9090
