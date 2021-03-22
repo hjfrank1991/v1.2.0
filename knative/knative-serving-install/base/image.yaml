@@ -7,4 +7,4 @@ metadata:
   name: queue-proxy
   namespace: knative-serving
 spec:
-  image: 'gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:d066ae5b642885827506610ae25728d442ce11447b82df6e9cc4c174bb97ecb3'
+  image: 'registry.cn-hangzhou.aliyuncs.com/frank_1991/kubeflow_new:serving-queue-v0.14.3'
